@@ -4,6 +4,7 @@ import Collage from "./components/Collage.js";
 import { subjectContext } from "./components/ContexData.js";
 import { studentContext } from "./components/Student.js";
 import StudentDataDisplay from "./components/StudentDataDisplay.js";
+import ReactMemo from "./components/memo/ReactMemo.js";
 
 class App extends Component {
   constructor() {
@@ -58,6 +59,7 @@ class App extends Component {
                 Clear
               </button>
               <Collage />
+              <ReactMemo />
             </studentContext.Provider>
           </subjectContext.Provider>
         </div>
